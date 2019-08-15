@@ -1,10 +1,11 @@
-import React from 'react';
-import classes from './Layout.css';
-import Aux from '../../hoc/Auxi';
+import React from "react";
+import Aux from "../../hoc/Auxi";
+import Toolbar from "../Navigation/Toolbar/Toolbar";
+import classes from "./Layout.css";
 
 const Layout = props => (
   <Aux>
-    <div>Toolbar, Sidebar, Backdrop</div>
+    <Toolbar />
     <main className={classes.Content}>{props.children}</main>
   </Aux>
 );
