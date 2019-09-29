@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Aux from "../../hoc/Auxi";
+import Aux from "../../hoc/Auxi/Auxi";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
@@ -31,7 +31,7 @@ class BurgerBuilder extends Component {
         return ingredients[igKey];
       })
       .reduce((sum, el) => {
-        console.log("sum:" + sum + "el:" + el);
+        // console.log("sum:" + sum + "el:" + el);
         return sum + el;
       }, 0);
     this.setState({ purchasable: sum > 0 });

@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../Logo/Logo";
 import NavItems from "../NavItems/NavItems";
 import BackDrop from "../../UI/Backdrop/Backdrop";
-import Auxi from "../../../hoc/Auxi";
+import Auxi from "../../../hoc/Auxi/Auxi";
 
 import classes from "./SideDrawer.css";
 
